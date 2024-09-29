@@ -1,13 +1,16 @@
-apply plugin: 'com.android.application'
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion "23.0.3"
+    namespace 'com.chauthai.swipereveallayoutdemo'
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.chauthai.swipereveallayout"
-        minSdkVersion 14
-        targetSdkVersion 24
+        minSdk 21
+        targetSdk 34
         versionCode 7
         versionName "1.4.0"
     }
@@ -20,9 +23,16 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:24.2.0'
-    compile 'com.android.support:design:24.2.0'
-    compile 'com.android.support:recyclerview-v7:24.2.0'
-    compile project(':swipe-reveal-layout')
+//    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+//    implementation 'androidx.appcompat:appcompat:1.7.0'
+
+    implementation 'com.google.android.material:material:1.12.0'
+
+    implementation 'androidx.recyclerview:recyclerview'
+
+
+//    androidx.customview:customview
+
+    implementation project(':swipe-reveal-layout')
 }

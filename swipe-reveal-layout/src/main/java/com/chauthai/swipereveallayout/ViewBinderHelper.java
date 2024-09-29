@@ -42,8 +42,8 @@ import java.util.Set;
  * save and restore the open/close state of the view.</p>
  *
  * <p>Optionally, if you also want to save and restore the open/close state when the device's
- * orientation is changed, call {@link #saveStates(Bundle)} in {@link android.app.Activity#onSaveInstanceState(Bundle)}
- * and {@link #restoreStates(Bundle)} in {@link android.app.Activity#onRestoreInstanceState(Bundle)}</p>
+ * orientation is changed, call {@link #saveStates(Bundle)} in
+ * and {@link #restoreStates(Bundle)} in </p>
  */
 public class ViewBinderHelper {
     private static final String BUNDLE_MAP_KEY = "ViewBinderHelper_Bundle_Map_Key";
@@ -106,7 +106,7 @@ public class ViewBinderHelper {
 
     /**
      * Only if you need to restore open/close state when the orientation is changed.
-     * Call this method in {@link android.app.Activity#onSaveInstanceState(Bundle)}
+     * Call this method in
      */
     public void saveStates(Bundle outState) {
         if (outState == null)

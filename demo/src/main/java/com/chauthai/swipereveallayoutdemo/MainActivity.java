@@ -2,12 +2,13 @@ package com.chauthai.swipereveallayoutdemo;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -30,17 +31,17 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.action_recycler_view:
-                startActivity(new Intent(this, RecyclerDemoActivity.class));
-                return true;
-
-            case R.id.action_list_view:
-                startActivity(new Intent(this, ListDemoActivity.class));
-                return true;
-
-            case R.id.action_grid_view:
-                startActivity(new Intent(this, GridActivity.class));
-                return true;
+//            case R.id.action_recycler_view:
+//                startActivity(new Intent(this, RecyclerDemoActivity.class));
+//                return true;
+//
+//            case R.id.action_list_view:
+//                startActivity(new Intent(this, ListDemoActivity.class));
+//                return true;
+//
+//            case R.id.action_grid_view:
+//                startActivity(new Intent(this, GridActivity.class));
+//                return true;
         }
 
         return false;
